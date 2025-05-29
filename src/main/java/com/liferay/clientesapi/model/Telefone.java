@@ -13,8 +13,14 @@ public class Telefone {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private TipoTelefone tipo;
+    private Telefone.TipoTelefone tipo;
 
     @NotBlank(message = "Número é obrigatório")
     private String numero;
+
+    public enum TipoTelefone {
+        RESIDENCIAL,
+        COMERCIAL,
+        CELULAR
+    }
 }
