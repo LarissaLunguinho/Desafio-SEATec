@@ -1,7 +1,12 @@
+/**
+ * Cliente (Frontend) 
+    → Controller (recebe requisição)
+        → Service (processa regras de negócio)
+            → Repository (acessa banco de dados)
+ */
+
 package com.liferay.clientesapi.controller;
 
-
-import com.liferay.clientesapi.dto.ClienteDTO;
 import com.liferay.clientesapi.model.Cliente;
 import com.liferay.clientesapi.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
