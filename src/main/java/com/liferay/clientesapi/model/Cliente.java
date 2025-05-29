@@ -25,6 +25,7 @@ public class Cliente {
     private Endereco endereco;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "cliente_id")
     private List<Telefone> telefones;
 
     @ElementCollection

@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .bi {
+    color: #2b2e3a;
+}
+
+.btn-primary {
+    background-color: #2b2e3a;
+    border-color: #2b2e3a;
+}
+
+.btn-primary:hover {
+    background-color: #1a1c23;
+    border-color: #1a1c23;
+}
+
+.table th {
+    border-top: none;
+    background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Esconde elementos específicos do admin para usuários comuns */
+body:not(.admin) .admin-only {
+    display: none !important;
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .table-responsive {
+        margin: 0 -15px;
+    }
+} 
